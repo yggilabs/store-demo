@@ -5,10 +5,10 @@ theme_color: "#3b1edb"
 
 # seo stuff
 # @see https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-title: 
-description: 
+title: Shop Demo
+description: A sample implementation of the shop
 url: site.github.url # default: site.github.url
-author:
+author: Sam Kelley
 # twitter:
 #   username: benbalter
 #   card: summary
