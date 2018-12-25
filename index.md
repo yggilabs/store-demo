@@ -4,4 +4,4 @@ title: Home
 ---
 ## About
 
-[products](products)
+[shop]({{ site.github.url }}/shop)
