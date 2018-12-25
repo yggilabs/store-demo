@@ -17,4 +17,19 @@ To revert the most recent change click [here]()
 [here](../../edit/master/_config.yml)
 
 ### Create a new product
+```markdown
+---
+label: snake eyes
+description: an energy drink
+categories:
+  beverage
+  energy drink
+stock:
+  quantity: 0
+  status: discontinued
+  price:
+    value: .99
+    currency: USD
+---
+```
 [here](../../new/master/_products)
