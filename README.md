@@ -4,6 +4,8 @@
 
 1. Go to [Settings](../../settings) > GitHub Pages > Source. Change dropdown value to "master branch" and click "save". Installation Done!
 
+## Configuration
+
 ## FAQS
 
 ### Fixing a mistake
