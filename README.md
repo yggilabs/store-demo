@@ -2,7 +2,7 @@
 
 ## Installation
 
-1. go to [Settings](../../settings) -> GitHub Pages -> Sources. Change value to master branch and save. Installation Done!
+1. Go to [Settings](../../settings) -> GitHub Pages -> Source. Change dropdown value to "master branch" and click "save". Installation Done!
 
 ## FAQS
 
