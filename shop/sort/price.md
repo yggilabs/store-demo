@@ -2,7 +2,7 @@
 layout: content
 title: Products
 ---
-[Home]() > [Products](products) > [Sort: price](products-sort-price)
+[Home]({{ site.github.url }}) > [Products]({{ site.github.url }}/shop) > [Sort: price]({{ site.github.url }}/shop/sort/price)
 ## Products
 {% assign products = site.products | sort "stock.price.value" | reverse %}
 {% for product in products %}
