@@ -21,8 +21,8 @@ To revert the most recent change click [here]()
 ### Create a new product
 
 ```markdown
---- # begin product configuration section
-label: snake eyes # display label for this product
+---
+label: snake eyes
 description: an energy drink
 categories:
   beverage
