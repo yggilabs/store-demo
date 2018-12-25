@@ -2,7 +2,7 @@
 layout: content
 title: Products
 ---
-[Home](/) > [Shop](shop)
+[Home]() > [Shop](shop)
 
 Sort: [Price](shop/sort/price)
 
