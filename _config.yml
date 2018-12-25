@@ -1,18 +1,14 @@
-remote_theme: yggilabs/store-theme
-introduction: This is the home of YggiGames. Here you will find the results of tinkering with, hacking and creating various games. Some of what you find here may even be tested. Enjoy!
-footer: Made with ☕ in Minneapolis. &copy;2018  Sam Kelley
-
 # manifest file stuff
-short_name: Yggi Games
-name: Yggi Games Blog
-theme_color: "#DB3B1E"
+short_name: 
+name: 
+theme_color: "#3b1edb"
 
 # seo stuff
 # @see https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-title: YggiGames Blog
-description: The newest creations from YggiGames
-# url: # default: site.github.url
-author: Sam Kelley
+title: 
+description: 
+url: site.github.url # default: site.github.url
+author:
 # twitter:
 #   username: benbalter
 #   card: summary
@@ -20,7 +16,7 @@ author: Sam Kelley
 #   app_id: 1234
 #   publisher: 1234
 #   admins: 1234
-logo: /images/icon.svg
+logo: /assets/images/icon.svg
 # social:
 #   name: Ben Balter
 #   links:
@@ -31,13 +27,7 @@ logo: /images/icon.svg
 #     - https://github.com/benbalter
 #     - https://keybase.io/benbalter
 # google_site_verification:
-# webmaster_verifications:
-#   google: 1234
-#   bing: 1234
-#   alexa: 1234
-#   yandex: 1234
-#   baidu: 1234
-# lang: # default: en_US
+lang: en_US # default: en_US
 
 permalink: none
 analytics: false # url parameters are acting wierd
@@ -57,3 +47,4 @@ plugins:
 sass:
   sass_dir: _sass
   style: compressed
+remote_theme: yggilabs/store-theme
