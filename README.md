@@ -1,8 +1,8 @@
 # store-demo
 
-## Instalation
+## Installation
 
-1. go [here](../../settings)
+1. go to [Settings](../../settings) -> GitHub Pages -> Sources. Change value to master branch and save. Installation Done!
 
 ## FAQS
 
