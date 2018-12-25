@@ -2,7 +2,7 @@
 layout: content
 title: Products
 ---
-
+[Home](/) > [Products](/products)
 ## Products
 {% for product in site.products %}
 * [{{ product.label }}]({{ site.github.baseurl }}{{ product.url }})
