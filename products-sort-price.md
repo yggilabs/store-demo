@@ -2,7 +2,7 @@
 layout: content
 title: Products
 ---
-[Home](/) > [Products](/products) > [Sort: price](/products-sort-price)
+[Home]() > [Products](products) > [Sort: price](products-sort-price)
 ## Products
 {% assign products = site.products | sort "stock.price.value" %}
 {% for product in products %}
