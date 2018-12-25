@@ -2,9 +2,9 @@
 layout: content
 title: Products
 ---
-[Home]() > [Shop](shop)
+[Home]({{ site.github.url }}) > [Shop]({{ site.github.url }}/shop)
 
-Sort: [Price](shop/sort/price)
+Sort: [Price]({{ site.github.url }}/shop/sort/price)
 
 ## Products
 {% for product in site.products %}
