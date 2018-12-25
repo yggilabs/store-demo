@@ -2,8 +2,9 @@
 layout: content
 title: Products
 ---
-[Home](/) > [Products](/products)
-Sort: [Price](/products-sort-price)
+[Home](/) > [Products](products)
+
+Sort: [Price](products-sort-price)
 
 ## Products
 {% for product in site.products %}
