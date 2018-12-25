@@ -5,4 +5,4 @@
 1. change name
 
 ## Create a new product
-[here](store-demo/new/master/_products)
+[here](/store-demo/new/master/_products)
