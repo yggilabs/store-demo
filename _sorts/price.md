@@ -1,15 +1,8 @@
 ---
-layout: content
+layout: shop
 title: Shop
 label: price
 ---
-
-[Home]({{ site.github.url }}) > [Shop]({{ site.github.url }}/{{ page.collection }})
-
-Sort: {% for sort in site.sorts %}
-[{{ sort.label }}]({{ site.github.url }}{{ sort.url }}) 
-{% endfor %}
-
 {% assign products = site.products | sort "stock.price.value" | reverse %}
 {% for product in products %}
 * [{{ product.label }}]({{ site.github.baseurl }}{{ product.url }})
