@@ -1,17 +1,9 @@
 ---
-layout: content
+layout: shop
 title: Shop
 label: a-z
 ---
-
-[Home]({{ site.github.url }}) > [Shop]({{ site.github.url }}/{{ page.collection }})
-
-Sort: {% for sort in site.sorts %}
-  * [{{ sort.label }}]({{ site.github.url }}{{ sort.url }}){{ seperator }}
-{% endfor %}
-
-
-{% assign products = site.products | sort "label" | reverse %}
+{% assign products = site.products | sort "label" %}
 {% for product in products %}
 * [{{ product.label }}]({{ site.github.baseurl }}{{ product.url }})
 
