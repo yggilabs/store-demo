@@ -6,7 +6,7 @@ label: a-z
 
 {% assign products = site.products | sort "name" %}
 {% for product in products %}
-* [{{ product.label }}]({{ site.github.baseurl }}{{ product.url }})
+* [{{ product.name }}]({{ site.github.baseurl }}{{ product.url }})
 
   {{ product.stock.price.value }} {{ product.stock.price.currency }}
 {% endfor %}
