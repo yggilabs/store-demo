@@ -1,5 +1,5 @@
 ---
-label: full throttle
+name: full throttle
 description: an energy drink
 categories:
   beverage
