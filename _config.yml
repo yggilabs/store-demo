@@ -1,6 +1,7 @@
 # manifest file stuff
 short_name: Shop Demo
 name: Shop Demo
+
 theme_color: "#3b1edb"
 
 # seo stuff
