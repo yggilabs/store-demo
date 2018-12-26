@@ -4,7 +4,7 @@ title: Shop
 label: price
 ---
 
-{% assign products = site.products | sort "stock.price.value" | reverse %}
+{% assign products = site.products | sort: "stock.price.value" | reverse %}
 {% for product in products %}
 * [{{ product.name }}]({{ site.github.baseurl }}{{ product.url }})
 
