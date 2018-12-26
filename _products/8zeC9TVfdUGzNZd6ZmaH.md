@@ -1,5 +1,5 @@
 ---
-label: monster
+name: monster
 description: an energy drink
 categories:
   beverage
