@@ -2,7 +2,7 @@
 layout: content
 title: Shop
 ---
-[Home]({{ site.github.url }}) > [Shop]({{ site.github.url }}/{{ page.collection }}) > [Sort: {{ sort.name }}]({{ site.github.url }}{{ page.url }})
+[Home]({{ site.github.url }}) > [Shop]({{ site.github.url }}/{{ page.collection }}) > [Sort: {{ page.name }}]({{ site.github.url }}{{ page.url }})
 
 Sort: {% for sort in site.sorts %}
 [{{sort.name}}]({{ site.github.url }}{{ sort.url }}) 
