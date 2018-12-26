@@ -4,7 +4,7 @@ title: Shop
 label: a-z
 ---
 
-{% assign products = site.products | sort "label" %}
+{% assign products = site.products | sort "name" %}
 {% for product in products %}
 * [{{ product.label }}]({{ site.github.baseurl }}{{ product.url }})
 
