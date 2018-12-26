@@ -1,5 +1,5 @@
 ---
-label: snake eyes
+name: snake eyes
 description: an energy drink
 categories:
   beverage
