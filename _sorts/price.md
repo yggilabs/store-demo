@@ -1,11 +1,13 @@
 ---
 layout: content
 title: Shop
+label: price
 ---
-[Home]({{ site.github.url }}) > [Shop]({{ site.github.url }}/{{ page.collection }}) > [Sort: {{ page.name }}]({{ site.github.url }}{{ page.url }})
+
+[Home]({{ site.github.url }}) > [Shop]({{ site.github.url }}/{{ page.collection }})
 
 Sort: {% for sort in site.sorts %}
-[{{sort.name}}]({{ site.github.url }}{{ sort.url }}) 
+[{{ sort.label }}]({{ site.github.url }}{{ sort.url }}) 
 {% endfor %}
 
 {% assign products = site.products | sort "stock.price.value" | reverse %}
