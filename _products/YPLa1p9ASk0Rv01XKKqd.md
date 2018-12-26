@@ -7,6 +7,6 @@ categories:
 stock:
   quantity: 5
   price:
-    value: 2.49
+    value: 1.99
     currency: USD
 ---
