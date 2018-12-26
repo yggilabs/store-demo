@@ -4,6 +4,7 @@ title: Shop
 ---
 [Home]({{ site.github.url }}) > [Shop]({{ site.github.url }}/shop) > [Sort: a-z]({{ site.github.url }}/shop/sort/alpha)
 
+Sort: [Price]({{ site.github.url }}/shop/sort/price), [A-Z]({{ site.github.url }}/shop/sort/alpha)
 {% assign products = site.products | sort "label" | reverse %}
 {% for product in products %}
 * [{{ product.label }}]({{ site.github.baseurl }}{{ product.url }})
