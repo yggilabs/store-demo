@@ -35,7 +35,6 @@ analytics: false # url parameters are acting wierd
 collections:
   products:
     output: true
-    layout: product
   views:
     output: true
     layout: shop
@@ -47,6 +46,13 @@ defaults:
       type: "products"
     values:
       layout: "product"
+  -
+    scope: 
+      path: 
+      type: views
+    values:
+      layout: shop
+      title: Shop
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
