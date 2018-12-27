@@ -4,4 +4,3 @@ title: Shop
 label: price
 sort: stock.price.value
 ---
-0
