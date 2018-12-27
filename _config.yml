@@ -35,7 +35,7 @@ analytics: false # url parameters are acting wierd
 collections:
   products:
     output: true
-  sorts:
+  views:
     output: true
 defaults:
   -
