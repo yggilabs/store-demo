@@ -2,11 +2,5 @@
 layout: shop
 title: Shop
 label: price
+sort: stock.price.value
 ---
-
-{% assign products = site.products | sort: "stock.price.value" %}
-{% for product in products %}
-* [{{ product.name }}]({{ site.github.baseurl }}{{ product.url }})
-
-  {{ product.stock.price.value }} {{ product.stock.price.currency }}
-{% endfor %}
