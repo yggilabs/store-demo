@@ -4,5 +4,4 @@ title: Home
 ---
 ## About
 
-{{ site.views | jsonify }}
-[shop]({{ site.github.url }})
+[shop]({{ site.github.url }}{{ site.views.first.id }})
