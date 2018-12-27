@@ -30,7 +30,7 @@ logo: /assets/images/icon.svg
 # google_site_verification:
 lang: en_US # default: en_US
 
-permalink: none
+permalink: pretty
 analytics: false # url parameters are acting wierd
 collections:
   products:
