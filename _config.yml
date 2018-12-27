@@ -48,7 +48,7 @@ defaults:
       layout: "product"
   -
     scope: 
-      path: 
+      path: ''
       type: views
     values:
       layout: shop
