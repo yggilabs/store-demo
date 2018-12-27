@@ -37,8 +37,6 @@ collections:
     output: true
   views:
     output: true
-    layout: shop
-    title: Shop
 defaults:
   -
     scope:
