@@ -10,4 +10,3 @@ stock:
     value: 2.49
     currency: USD
 ---
-
