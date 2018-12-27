@@ -42,13 +42,11 @@ collections:
 defaults:
   -
     scope:
-      path: ""
-      type: "products"
+      type: products
     values:
-      layout: "product"
+      layout: product
   -
     scope: 
-      path: ''
       type: views
     values:
       layout: shop
