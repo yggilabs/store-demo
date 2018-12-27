@@ -51,4 +51,3 @@ sass:
   sass_dir: _sass
   style: compressed
 remote_theme: yggilabs/store-theme
-excerpt_separator: ""   # Workaround for https://blog.slaks.net/2013-08-09/jekyll-tag-was-never-closed/
