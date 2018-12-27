@@ -4,4 +4,4 @@ title: Home
 ---
 ## About
 
-[shop]({{ site.github.url }}/shop)
+[shop]({{ site.github.url }}/views/price)
