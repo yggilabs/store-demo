@@ -4,4 +4,5 @@ title: Home
 ---
 ## About
 
-[shop]({{ site.github.url }}/views/price)
+{{ site.views | jsonify }}
+[shop]({{ site.github.url }})
