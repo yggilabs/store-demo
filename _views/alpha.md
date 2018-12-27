@@ -1,5 +1,5 @@
 ---
-layout: shop
+layout: content
 title: Shop
 label: a-z
 sort: name
