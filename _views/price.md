@@ -2,5 +2,5 @@
 layout: shop
 title: Shop
 label: price
-sort: stock.price.value
+sort: 'stock.price.value'
 ---
