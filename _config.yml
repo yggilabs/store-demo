@@ -38,6 +38,7 @@ collections:
     layout: product
   views:
     output: true
+    layout: shop
 defaults:
   -
     scope:
