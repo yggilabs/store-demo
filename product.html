@@ -56,7 +56,7 @@ product:
       selected_{{ attribute }}: event.targetOption
     }
    })">
-  {% assign variations = page.product.variations | map: "attributes" | map: "{{ attribute }}" | uniq %}
+  {% assign variations = page.product.variations | map: "attributes" | map: attribute | uniq %}
   <ul>
   {% for variation in variations %}
     <li{% if forloop.first %} selected{% endif %} option="{{variation}}">{{variation}}</li>
