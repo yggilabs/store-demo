@@ -32,19 +32,7 @@ product:
 ```
 ```javascript
 { 
-{% assign mmmm = page.product.variations | group_by: "attributes.color" %}
-{% for aaa in mmmm %}
-  "{{ aaa.name }}": 
-    {
-    {% assign nnn = aaa.items | group_by: "attributes.size"  %}
-    {% for bbb in nnn %}
-      "{{ bbb.name }}": 
-        {
-          {{ bbb.items.first }}
-        }
-    {% endfor %}
-    },
-{% endfor %}
+
 }
 ```
 ```javascript
