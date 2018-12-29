@@ -75,11 +75,11 @@ product:
   class="p2"
   action-xhr="https://us-central1-cart-991a0.cloudfunctions.net/api/shop/{{ site.github.repository_nwo | url_encode | replace: "/","%2f" }}/cart/"
   target="_top">
-  <input name="cart"  
+  <input name="cartId"  
     type="hidden"
     value="CLIENT_ID(cart)"
     data-amp-replace="CLIENT_ID">
-  <input name="item"  
+  <input name="itemId"  
     type="hidden"
     [value]="product[product.selected_color][product.selected_size].id">
   <input type="submit">
