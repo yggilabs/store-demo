@@ -49,7 +49,12 @@ product:
 </amp-state>
 <amp-selector name="color"
   layout="container"
-  [selected]="product.selectedColor">
+  [selected]="product.selectedColor"
+  on="select:AMP.setState({
+    product: {
+      selectedColor: event.targetOption
+    }
+   })">
   {% assign colors = page.product.variations | map: "attributes" | map: "color" | uniq %}
   <ul>
   {% for color in colors %}
