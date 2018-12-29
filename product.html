@@ -1,5 +1,6 @@
 ---
 layout: content
+sidebar: true
 product:
   id: prod_123456789
   name: t-shirt
@@ -73,7 +74,8 @@ product:
 {% endfor %}
 <form method="post"
   action-xhr="https://us-central1-cart-991a0.cloudfunctions.net/api/shop/{{ site.github.repository_nwo | url_encode | replace: "/","%2f" }}/cart/"
-  target="_top">
+  target="_top"
+  on="submit-success:cart.refresh">
   <input name="cartId"  
     id="cartId"
     type="hidden"
@@ -85,16 +87,19 @@ product:
     [value]="product[product.selected_color][product.selected_size].id">
   <input type="submit">
 </form>
+<button on='tap:sidebar.toggle'>cart</button>
 
-<amp-list
-  id="cart"
-  width="auto"
-  height="100"
-  layout="fixed-height"
-  src="https://us-central1-cart-991a0.cloudfunctions.net/api/shop/{{ site.github.repository_nwo | url_encode | replace: "/","%2f" }}/cart/?clientId=CLIENT_ID(cart)">
-  {% raw %}
-  <template type="amp-mustache">
-    <div>{{ id }}</div>
-  </template>
-  {% endraw %}
-</amp-list>
+<amp-sidebar id="sidebar" layout="nodisplay" side="right" on="open:cart.refresh">
+  <amp-list
+    id="cart"
+    width="auto"
+    height="100"
+    layout="fixed-height"
+    src="https://us-central1-cart-991a0.cloudfunctions.net/api/shop/{{ site.github.repository_nwo | url_encode | replace: "/","%2f" }}/cart/?clientId=CLIENT_ID(cart)">
+    {% raw %}
+    <template type="amp-mustache">
+      <div>{{ id }}</div>
+    </template>
+    {% endraw %}
+  </amp-list>
+</amp-sidebar>
