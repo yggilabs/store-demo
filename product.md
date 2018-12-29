@@ -36,7 +36,7 @@ product:
     {% for bbb in nnn %}
       "{{ bbb.name }}": 
         {
-          {{ bbb.items.first }}
+          {{ bbb.items.first | jsonify }}
         }
     {% endfor %}
     },
