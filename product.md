@@ -27,14 +27,14 @@ product:
         color: gray
         size: L    
 ---
+listColor: {{ page.product.variations | map: "attributes" }}
+listColor: {{ page.product.variations | map: "attributes.size" }}
 <amp-state id="product">
   <script type="application/json">
     {
       price: {{ page.product.price }},
-      selectedColor: {{ page.product.variations.first.attributes.color }},
-      listColor: {{ page.product.variations | map: "attributes.color" }},
-      selectedSize: {{ page.product.variations.first.attributes.size }},
-      listColor: {{ page.product.variations | map: "attributes.size" }},
+      selectedColor: {{ page.product.variations.first.attributes.color }},      
+      selectedSize: {{ page.product.variations.first.attributes.size }},      
     {%- assign mmmm = page.product.variations | group_by: "attributes.color" -%}
     {%- for aaa in mmmm -%}
       "{{ aaa.name }}": 
