@@ -27,13 +27,12 @@ product:
         color: gray
         size: L    
 ---
-
+listColor: {{ page.product.variations | map: "attributes" | map: "color" | uniq }}
+listSize: {{ page.product.variations | map: "attributes" | map: "size" | uniq }}
 <amp-state id="product">
   <script type="application/json">
     {
       price: {{ page.product.price }},
-      listColor: {{ page.product.variations | map: "attributes" | map: "color" | uniq }},
-      listSize: {{ page.product.variations | map: "attributes" | map: "size" | uniq }},
       selectedColor: {{ page.product.variations.first.attributes.color }},      
       selectedSize: {{ page.product.variations.first.attributes.size }},      
     {%- assign mmmm = page.product.variations | group_by: "attributes.color" -%}
@@ -50,3 +49,13 @@ product:
     }    
   </script>
 </amp-state>
+<amp-selector name="color"
+  layout="container"
+  [selected]="product.selectedColor">
+  {% assign colors = page.product.variations | map: "attributes" | map: "color" | uniq %}
+  <ul>
+  {% for color in colors %}
+    <li{% if forloop.first %} selected{% endif %} option="{{color}}">{{color}}</li>
+  {% endfor %}
+  </ul>
+</amp-selector>
