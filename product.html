@@ -31,7 +31,8 @@ product:
   <script type="application/json">
     {
       "price": {{ page.product.price }},
-      "selected_color": "{{ page.product.variations.first.attributes.color }}",      
+      {% for attribute in page.product.attributes %}
+      "selected_{{ attribute }}": "{{ page.product.variations.first.attributes[attribute] }}",      
       "selected_size": "{{ page.product.variations.first.attributes.size }}",      
       {%- assign mmmm = page.product.variations | group_by: "attributes.color" -%}
       {%- for aaa in mmmm -%}
