@@ -27,18 +27,20 @@ product:
         color: gray
         size: L    
 ---
-```javascript
-{
-{% assign mmmm = page.product.variations | group_by: "attributes.color" %}
-{% for aaa in mmmm %}
-  "{{ aaa.name }}": 
+<amp-state id="product">
+  <script type="application/json">
     {
-    {% assign nnn = aaa.items | group_by: "attributes.size"  %}
-    {% for bbb in nnn %}
-      "{{ bbb.name }}": 
-        {{ bbb.items.first | jsonify }}{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-    }{% unless forloop.last %},{% endunless %}
-{% endfor %}
-}
-```
+    {%- assign mmmm = page.product.variations | group_by: "attributes.color" -%}
+    {%- for aaa in mmmm -%}
+      "{{ aaa.name }}": 
+        {
+        {%- assign nnn = aaa.items | group_by: "attributes.size"  -%}
+        {%- for bbb in nnn -%}
+          "{{ bbb.name }}": 
+            {{ bbb.items.first | jsonify }}{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+        }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+    }    
+  </script>
+</amp-state>
