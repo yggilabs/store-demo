@@ -37,7 +37,7 @@ product:
       "{{ bbb.name }}": 
         {
           {{ bbb.items.first | jsonify }}
-        }
+        },
     {% endfor %}
     },
 {% endfor %}
