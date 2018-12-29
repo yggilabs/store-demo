@@ -1,4 +1,5 @@
 ---
+layout: content
 id: prod_123456789
 name: t-shirt
 price: 1500
