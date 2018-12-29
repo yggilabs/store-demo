@@ -25,4 +25,11 @@ variations:
       color: gray
       size: L    
 ---
-{{ page | jsonify }}
+<amp-state id="product">
+  <script type="application/json">
+    {{ page | jsonify }}
+  </script>
+</amp-state>
+
+<p [text]="product.name">Some placeholder text.</p>
+
