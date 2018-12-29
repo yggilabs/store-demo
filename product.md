@@ -31,7 +31,19 @@ product:
 {{ page.product.variations | jsonify }}
 ```
 ```javascript
-{{ page.product.variations | group_by: "attributes.color" | jsonify }}
+{ 
+{% for a in page.product.variations | group_by: "attributes.color" %}
+  "{{ a.name }}": 
+    {
+    {% for b in a.items | group_by: "attributes.size" %}
+      "{{ b.name }}": 
+        {
+          {{ b.items.first }}
+        }
+    {% endfor %}
+    },
+{% endfor %}
+}
 ```
 ```javascript
 {{ page.product.variations | group_by: "attributes.color" | group_by: "items.attributes.size" | jsonify }}
