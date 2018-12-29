@@ -32,7 +32,9 @@ product:
     {
       price: {{ page.product.price }},
       selectedColor: {{ page.product.variations.first.attributes.color }},
+      listColor: {{ page.product.variations | map: "attributes.color" }},
       selectedSize: {{ page.product.variations.first.attributes.size }},
+      listColor: {{ page.product.variations | map: "attributes.size" }},
     {%- assign mmmm = page.product.variations | group_by: "attributes.color" -%}
     {%- for aaa in mmmm -%}
       "{{ aaa.name }}": 
