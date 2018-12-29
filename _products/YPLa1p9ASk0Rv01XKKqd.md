@@ -1,12 +1,28 @@
 ---
-name: full throttle
-description: an energy drink
-categories:
-  beverage
-  energy drink
-stock:
-  quantity: 5
-  price:
-    value: 1.99
-    currency: USD
+id: prod_123456789
+name: t-shirt
+price: 1500
+attributes:
+  - color
+  - size
+variations:
+  - attributes:
+      color: black
+      size: S
+  - attributes:
+      color: black
+      size: M
+  - attributes:
+      color: black
+      size: L
+  - attributes:
+      color: gray
+      size: S
+  - attributes:
+      color: gray
+      size: M
+  - attributes:
+      color: gray
+      size: L    
 ---
+{{ page | jsonify }}
