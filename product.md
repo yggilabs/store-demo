@@ -36,9 +36,9 @@ product:
     {% assign nnn = aaa.items | group_by: "attributes.size"  %}
     {% for bbb in nnn %}
       "{{ bbb.name }}": 
-        {{ bbb.items.first | jsonify }},
+        {{ bbb.items.first | jsonify }}{% unless forloop.last %},{% endunless %}
     {% endfor %}
-    },
+    }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 }
 ```
