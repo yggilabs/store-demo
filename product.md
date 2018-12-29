@@ -27,7 +27,8 @@ product:
         color: gray
         size: L    
 ---
-
+```javascript
+{
 {% assign mmmm = page.product.variations | group_by: "attributes.color" %}
 {% for aaa in mmmm %}
   "{{ aaa.name }}": 
@@ -41,3 +42,5 @@ product:
     {% endfor %}
     },
 {% endfor %}
+}
+```
