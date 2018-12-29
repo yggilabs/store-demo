@@ -90,11 +90,8 @@ product:
 <button on='tap:sidebar.toggle'>cart</button>
 
 <amp-sidebar id="sidebar" layout="nodisplay" side="right" on="open:cart.refresh">
-  <amp-list
-    id="cart"
-    width="auto"
-    height="100"
-    layout="fixed-height"
+  <amp-list id="cart"    
+    layout="fill"
     src="https://us-central1-cart-991a0.cloudfunctions.net/api/shop/{{ site.github.repository_nwo | url_encode | replace: "/","%2f" }}/cart/?clientId=CLIENT_ID(cart)">
     {% raw %}
     <template type="amp-mustache">
