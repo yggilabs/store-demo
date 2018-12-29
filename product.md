@@ -27,8 +27,8 @@ product:
         color: gray
         size: L    
 ---
-listColor: {{ page.product.variations | map: "attributes" }}
-listColor: {{ page.product.variations | map: "attributes.size" }}
+listColor: {{ page.product.variations | map: "attributes" | map: "color" | uniq | join: ", " }}
+listSize: {{ page.product.variations | map: "attributes" | map: "size" | uniq | join: ", " }}
 <amp-state id="product">
   <script type="application/json">
     {
