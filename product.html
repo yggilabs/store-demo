@@ -11,21 +11,27 @@ product:
     - attributes:
         color: black
         size: S
+      id: sku_123456789
     - attributes:
         color: black
         size: M
+      id: sku_223456789
     - attributes:
         color: black
         size: L
+      id: sku_323456789
     - attributes:
         color: gray
         size: S
+      id: sku_423456789
     - attributes:
         color: gray
         size: M
+      id: sku_523456789
     - attributes:
         color: gray
         size: L    
+      id: sku_623456789
 ---
 <amp-state id="product">
   <script type="application/json">
@@ -65,3 +71,4 @@ product:
   </ul>
 </amp-selector>
 {% endfor %}
+<div [text]="product[product.selected_color][product.selected_size].id"></div>
