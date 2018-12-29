@@ -47,7 +47,7 @@ product:
     }    
   </script>
 </amp-state>
-{% for attribute in attributes %}
+{% for attribute in page.product.attributes %}
 <amp-selector name="{{ attribute }}"
   layout="container"
   [selected]="product.selected_{{ attribute }}"
