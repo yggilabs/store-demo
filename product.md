@@ -27,14 +27,4 @@ product:
         color: gray
         size: L    
 ---
-```javascript
-{{ page.product.variations | jsonify }}
-```
-```javascript
-{ 
 
-}
-```
-```javascript
-{{ page.product.variations | group_by: "attributes.color" | group_by: "items.attributes.size" | jsonify }}
-```
