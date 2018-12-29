@@ -32,7 +32,18 @@ product:
   <script type="application/json">
     {{ page.product | jsonify }}
   </script>
-</amp-state>
-
-<p [text]="product.name">Some placeholder text.</p>
+</amp-state
+  >
+<amp-list width="auto"
+  height="100"
+  layout="fixed-height"
+  items="."
+  single-item
+  src="product">
+  {% raw %}
+  <template type="amp-mustache">
+    {{ name }}    
+  </template>
+  {% endraw %}
+</amp-list>
 
