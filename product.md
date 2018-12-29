@@ -34,5 +34,5 @@ product:
 {{ page.product.variations | group_by: "attributes.color" | jsonify }}
 ```
 ```javascript
-{{ page.product.variations | group_by: "color" | group_by_expression: "item","item.size" | jsonify }}
+{{ page.product.variations | group_by: "attributes.color" | group_by: "items.attributes.size" | jsonify }}
 ```
