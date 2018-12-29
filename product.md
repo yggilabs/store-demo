@@ -32,10 +32,12 @@ product:
 ```
 ```javascript
 { 
-{% for a in page.product.variations | group_by: "attributes.color" %}
+{% assign m = page.product.variations | group_by: "attributes.color" %}
+{% for a in m %}
   "{{ a.name }}": 
     {
-    {% for b in a.items | group_by: "attributes.size" %}
+    {% assign n = a.items | group_by: "attributes.size"  %}
+    {% for b in n %}
       "{{ b.name }}": 
         {
           {{ b.items.first }}
