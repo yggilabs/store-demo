@@ -30,20 +30,20 @@ product:
 <amp-state id="product">
   <script type="application/json">
     {
-      price: {{ page.product.price }},
-      selectedColor: '{{ page.product.variations.first.attributes.color }}',      
-      selectedSize: '{{ page.product.variations.first.attributes.size }}',      
-    {%- assign mmmm = page.product.variations | group_by: "attributes.color" -%}
-    {%- for aaa in mmmm -%}
+      "price": {{ page.product.price }},
+      "selectedColor": "{{ page.product.variations.first.attributes.color }}",      
+      "selectedSize": "{{ page.product.variations.first.attributes.size }}",      
+      {%- assign mmmm = page.product.variations | group_by: "attributes.color" -%}
+      {%- for aaa in mmmm -%}
       "{{ aaa.name }}": 
         {
-        {%- assign nnn = aaa.items | group_by: "attributes.size"  -%}
-        {%- for bbb in nnn -%}
+          {%- assign nnn = aaa.items | group_by: "attributes.size"  -%}
+          {%- for bbb in nnn -%}
           "{{ bbb.name }}": 
             {{ bbb.items.first | jsonify }}{% unless forloop.last %},{% endunless %}
-        {% endfor %}
+          {% endfor %}
         }{% unless forloop.last %},{% endunless %}
-    {%- endfor -%}
+      {%- endfor -%}
     }    
   </script>
 </amp-state>
