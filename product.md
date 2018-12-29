@@ -30,8 +30,9 @@ product:
 <amp-state id="product">
   <script type="application/json">
     {
+      price: {{ page.product.price }},
       selectedColor: {{ page.product.variations.first.attributes.color }},
-      selectedSize: {{ page.product.variations.first.attributes.size }}
+      selectedSize: {{ page.product.variations.first.attributes.size }},
     {%- assign mmmm = page.product.variations | group_by: "attributes.color" -%}
     {%- for aaa in mmmm -%}
       "{{ aaa.name }}": 
