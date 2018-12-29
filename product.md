@@ -27,8 +27,6 @@ product:
         color: gray
         size: L    
 ---
-listColor: {{ page.product.variations | map: "attributes" | map: "color" | uniq }}
-listSize: {{ page.product.variations | map: "attributes" | map: "size" | uniq }}
 <amp-state id="product">
   <script type="application/json">
     {
