@@ -27,22 +27,12 @@ product:
         color: gray
         size: L    
 ---
-
-<amp-state id="product">
-  <script type="application/json">
-    {{ page.product | jsonify }}
-  </script>
-</amp-state>
-<amp-list width="auto"
-  height="100"
-  layout="fixed-height"
-  items="."
-  single-item
-  src="product">
-  {% raw %}
-  <template type="amp-mustache">
-    {{ name }}    
-  </template>
-  {% endraw %}
-</amp-list>
-
+```javascript
+{{ page.product.variations | jsonify }}
+```
+```javascript
+{{ page.product.variations | group_by: "color" | jsonify }}
+```
+```javascript
+{{ page.product.variations | group_by: "color" | group_by_expression: "item","item.size" | jsonify }}
+```
