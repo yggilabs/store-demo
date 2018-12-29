@@ -31,7 +31,7 @@ product:
 {{ page.product.variations | jsonify }}
 ```
 ```javascript
-{{ page.product.variations | group_by: "color" | jsonify }}
+{{ page.product.variations | group_by_expression: "attributes","attributes.color" | jsonify }}
 ```
 ```javascript
 {{ page.product.variations | group_by: "color" | group_by_expression: "item","item.size" | jsonify }}
