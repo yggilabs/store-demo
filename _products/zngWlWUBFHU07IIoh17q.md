@@ -1,6 +1,6 @@
 ---
-name: v-neck t-shirt
-price: 1500
+name: t-shirt
+price: 900
 attributes:
   - name: color
     items:
@@ -13,3 +13,4 @@ attributes:
       - M
       - L       
 ---
+ 
