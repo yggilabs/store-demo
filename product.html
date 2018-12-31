@@ -16,14 +16,14 @@ attributes:
 <amp-state id="product">
   <script type="application/json">
     {      
-      {%- for attribute in page.product.attributes -%}
-      "selected_{{ attribute }}": "{{ page.product.attributes[attribute].first }}", 
+      {%- for attribute in page.attributes -%}
+      "selected_{{ attribute }}": "{{ page.ttributes[attribute].first }}", 
       {%- endfor -%}      
-      "price": {{ page.product.price }}
+      "price": {{ page.price }}
     }    
   </script>
 </amp-state>
-{% for attribute in page.product.attributes %}
+{% for attribute in page.attributes %}
 <amp-selector name="{{ attribute }}"
   layout="container"
   [selected]="product.selected_{{ attribute }}"
@@ -32,7 +32,7 @@ attributes:
       selected_{{ attribute }}: event.targetOption
     }
    })">
-  {% assign variations = page.product.variations | map: "attributes" | map: attribute | uniq %}
+  {% assign variations = page.variations | map: "attributes" | map: attribute | uniq %}
   <ul>
   {% for variant in attribute %}
     <li{% if forloop.first %} selected{% endif %} option="{{variant}}">{{variant}}</li>
@@ -48,7 +48,7 @@ attributes:
     type="hidden"
     value="CLIENT_ID(cart)"
     data-amp-replace="CLIENT_ID">
-  {%- for attribute in page.product.attributes -%}
+  {%- for attribute in page.attributes -%}
   <input name="attributes[{{ attribute }}]"  
     type="hidden"
     [value]="product[product.selected_{{ attribute }}]>
@@ -68,21 +68,3 @@ attributes:
     {% endraw %}
   </amp-list>
 </amp-sidebar>
-
-{{ page.id }}
-{{ page.id | sha1 }}
-
-
-{% comment %}
-{%- assign mmmm = page.product.variations | group_by: "attributes.color" -%}
-{%- for aaa in mmmm -%}
-"{{ aaa.name }}": 
-  {
-    {%- assign nnn = aaa.items | group_by: "attributes.size"  -%}
-    {%- for bbb in nnn -%}
-    "{{ bbb.name }}": 
-      {{ bbb.items.first | jsonify }}{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  }{% unless forloop.last %},{% endunless %}
-{%- endfor -%}
-{% endcomment %}
