@@ -1,57 +1,25 @@
 ---
 layout: content
 sidebar: true
-product:
-  id: prod_123456789
-  name: t-shirt
-  price: 1500
-  attributes:
-    - color
-    - size
-  variations:
-    - attributes:
-        color: black
-        size: S
-      id: sku_123456789
-    - attributes:
-        color: black
-        size: M
-      id: sku_223456789
-    - attributes:
-        color: black
-        size: L
-      id: sku_323456789
-    - attributes:
-        color: gray
-        size: S
-      id: sku_423456789
-    - attributes:
-        color: gray
-        size: M
-      id: sku_523456789
-    - attributes:
-        color: gray
-        size: L    
-      id: sku_623456789
+name: v-neck t-shirt
+price: 1500
+attributes:
+  - color:
+    black
+    red
+    gray
+  - size:
+    S
+    M 
+    L        
 ---
 <amp-state id="product">
   <script type="application/json">
-    {
-      "price": {{ page.product.price }},
+    {      
       {%- for attribute in page.product.attributes -%}
-      "selected_{{ attribute }}": "{{ page.product.variations.first.attributes[attribute] }}", 
-      {%- endfor -%}   
-      {%- assign mmmm = page.product.variations | group_by: "attributes.color" -%}
-      {%- for aaa in mmmm -%}
-      "{{ aaa.name }}": 
-        {
-          {%- assign nnn = aaa.items | group_by: "attributes.size"  -%}
-          {%- for bbb in nnn -%}
-          "{{ bbb.name }}": 
-            {{ bbb.items.first | jsonify }}{% unless forloop.last %},{% endunless %}
-          {% endfor %}
-        }{% unless forloop.last %},{% endunless %}
-      {%- endfor -%}
+      "selected_{{ attribute }}": "{{ page.product.attributes[attribute].first }}", 
+      {%- endfor -%}      
+      "price": {{ page.product.price }}
     }    
   </script>
 </amp-state>
@@ -103,3 +71,18 @@ product:
 
 {{ page.id }}
 {{ page.id | sha1 }}
+
+
+{% comment %}
+{%- assign mmmm = page.product.variations | group_by: "attributes.color" -%}
+{%- for aaa in mmmm -%}
+"{{ aaa.name }}": 
+  {
+    {%- assign nnn = aaa.items | group_by: "attributes.size"  -%}
+    {%- for bbb in nnn -%}
+    "{{ bbb.name }}": 
+      {{ bbb.items.first | jsonify }}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  }{% unless forloop.last %},{% endunless %}
+{%- endfor -%}
+{% endcomment %}
