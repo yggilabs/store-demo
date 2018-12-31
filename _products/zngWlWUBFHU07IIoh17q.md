@@ -1,13 +1,13 @@
 ---
-name: snake eyes
-description: an energy drink
-categories:
-  beverage
-  energy drink
-stock:
-  quantity: 0
-  status: discontinued
-  price:
-    value: .99
-    currency: USD
+name: v-neck t-shirt
+price: 1500
+attributes:
+  - color:
+    black
+    red
+    gray
+  - size:
+    S
+    M 
+    L        
 ---
