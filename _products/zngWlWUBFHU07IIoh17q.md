@@ -2,7 +2,8 @@
 name: v-neck t-shirt
 price: 1500
 attributes:
-  - color:
+  - name: color
+    label:
       black:
       red:
       gray:
