@@ -1,12 +1,13 @@
 ---
-name: monster
-description: an energy drink
-categories:
-  beverage
-  energy drink
-stock:
-  quantity: 10
-  price:
-    value: 2.49
-    currency: USD
+name: v-neck t-shirt
+price: 1500
+attributes:
+  - color:
+    black
+    red
+    gray
+  - size:
+    S
+    M 
+    L        
 ---
