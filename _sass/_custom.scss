@@ -61,7 +61,9 @@
 
 .product__selectors ul {
   list-style: none;
-  display: flex
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
 .product__selectors ul > li {
