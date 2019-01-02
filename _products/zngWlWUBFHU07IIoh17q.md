@@ -1,6 +1,5 @@
 ---
 name: t-shirt
-description: A very basic t-shirt
 price: 900
 images:
   - https://images-na.ssl-images-amazon.com/images/I/81A9r-kog%2BL._UL1500_.jpg
@@ -24,3 +23,5 @@ attributes:
       - M
       - L       
 ---
+
+This is a very basi t-shirt. It's made with good fabric and comes in many colors.
