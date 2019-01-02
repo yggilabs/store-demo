@@ -59,6 +59,15 @@
   grid-area: add-to-cart;
 }
 
+.product__add-to-cart-button input[type=submit] {
+  color: var(--colors__light);
+  background-color: var(--colors__highlight);
+  outline: none;
+  padding: 4px 8px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
 .product__selectors ul {
   list-style: none;
   display: flex;
@@ -89,3 +98,4 @@
   background-color: var(--colors__highlight);
   outline: none;
 }
+
