@@ -1,7 +1,8 @@
 :root {
   --product_grid-template-columns: 1fr 1fr;
   --product_grid-template-areas: 
-    "header header" 
+    "image name" 
+    "image description" 
     "image properties"
     "image selectors"
     "image add-to-cart"
@@ -15,8 +16,9 @@
   :root {
     --product_grid-template-columns: 1fr;
     --product_grid-template-areas: 
-      "header" 
+      "name" 
       "image"
+      "description"
       "properties"
       "selectors"
       "add-to-cart"
