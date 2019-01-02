@@ -6,6 +6,7 @@
     "header header" 
     "image properties"
     "image selectors"
+    "image features"
     "body body";
 }
 
@@ -15,4 +16,8 @@
 
 .product__image {
   grid-area: image;
+}
+
+.product__features {
+  grid-area: features; 
 }
