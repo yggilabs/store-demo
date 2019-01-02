@@ -1,6 +1,6 @@
 ---
 name: t-shirt
-description: A very basic t-shirt.
+description: A very basic t-shirt
 price: 900
 images:
   - https://images-na.ssl-images-amazon.com/images/I/81A9r-kog%2BL._UL1500_.jpg
