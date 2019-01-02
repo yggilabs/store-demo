@@ -33,3 +33,20 @@
 .contain {
   object-fit: contain;
 }
+
+.product__selectors ul {
+  list-style: none;
+  display: flex
+}
+
+.product__selectors ul > li {
+  padding: 4px 8px;
+  outline: none;
+  color: var(--colors__highlight);
+  border: solid var(--colors__highlight) 1px;
+}
+
+.product__selectors ul > li[selected] {
+  color: var(--colors__light);
+  background-color: var(--colors__highlight);
+}
