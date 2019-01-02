@@ -42,8 +42,20 @@
 .product__selectors ul > li {
   padding: 4px 8px;
   outline: none;
+  margin: 0;
   color: var(--colors__highlight);
   border: solid var(--colors__highlight) 1px;
+}
+
+
+.product__selectors ul > li:first-of-type {
+  border-radius-top-left: 4px
+  border-radius-bottom-left: 4px
+}
+
+.product__selectors ul > li:last-of-type {
+  border-radius-top-right: 4px
+  border-radius-bottom-right: 4px
 }
 
 .product__selectors ul > li[selected] {
