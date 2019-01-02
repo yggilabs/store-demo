@@ -21,3 +21,11 @@
 .product__features {
   grid-area: features; 
 }
+
+.cover {
+  object-fit: cover;
+}
+
+.contain {
+  object-fit: contain;
+}
