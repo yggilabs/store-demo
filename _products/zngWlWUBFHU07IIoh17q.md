@@ -1,6 +1,10 @@
 ---
 name: t-shirt
 price: 900
+images:
+  - https://images-na.ssl-images-amazon.com/images/I/81A9r-kog%2BL._UL1500_.jpg
+  - https://images-na.ssl-images-amazon.com/images/I/81TgQ0MNFLL._SX679._SX._UX._SY._UY_.jpg
+  - https://images-na.ssl-images-amazon.com/images/I/51UGgX-xw9L._SX38_SY50_CR,0,0,38,50_.jpg
 attributes:
   - name: color
     items:
