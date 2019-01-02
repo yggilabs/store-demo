@@ -19,6 +19,7 @@
       "properties"
       "selectors"
       "add-to-cart"
+      "rule"
       "features"
       "body";
   }
@@ -29,6 +30,10 @@
   grid-template-columns: var(--product_grid-template-columns);
   grid-auto-rows: auto;
   grid-template-areas: var(--product_grid-template-areas)
+}
+
+.product__rule {
+  grid-area: rule; 
 }
 
 .product__selectors {
