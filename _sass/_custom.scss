@@ -41,7 +41,6 @@
 
 .product__selectors ul > li {
   padding: 4px 8px;
-  outline: none;
   margin: 0;
   color: var(--colors__highlight);
   border: solid var(--colors__highlight) 1px;
@@ -60,4 +59,5 @@
 .product__selectors ul > li[selected] {
   color: var(--colors__light);
   background-color: var(--colors__highlight);
+  outline: none;
 }
