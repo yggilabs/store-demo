@@ -40,6 +40,14 @@ amp-selector::before {
   grid-template-areas: var(--product_grid-template-areas)
 }
 
+.product__name {
+  grid-area: name; 
+}
+
+.product__description {
+  grid-area: description; 
+}
+
 .product__rule {
   grid-area: rule; 
 }
