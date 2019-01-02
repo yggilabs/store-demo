@@ -4,6 +4,7 @@
     "header header" 
     "image properties"
     "image selectors"
+    "image add-to-cart"
     "image features"
     "body body";
 }
@@ -17,6 +18,7 @@
       "image"
       "properties"
       "selectors"
+      "add-to-cart"
       "features"
       "body";
   }
@@ -51,6 +53,10 @@
 
 .contain {
   object-fit: contain;
+}
+
+.product__add-to-cart-button {
+  grid-area: add-to-cart;
 }
 
 .product__selectors ul {
