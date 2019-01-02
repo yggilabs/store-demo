@@ -26,6 +26,12 @@
   }
 }
 
+amp-selector::before {
+  display: block;
+  content: attr(name) ":";
+  text-transform: uppercase;
+}
+
 .product {
   display: grid;
   grid-template-columns: var(--product_grid-template-columns);
