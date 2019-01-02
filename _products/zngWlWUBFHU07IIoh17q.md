@@ -24,4 +24,4 @@ attributes:
       - L       
 ---
 
-This is a very basi t-shirt. It's made with good fabric and comes in many colors.
+This is a very basic t-shirt. It's made with good fabric and comes in many colors.
