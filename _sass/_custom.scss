@@ -22,6 +22,10 @@
   grid-area: features; 
 }
 
+.product__carousel-preview > button {
+  max-width: 90px;
+}
+
 .cover {
   object-fit: cover;
 }
