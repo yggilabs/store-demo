@@ -17,15 +17,6 @@ attributes:
       - black
       - red
       - gray
-      - black
-      - red
-      - gray
-      - black
-      - red
-      - gray
-      - black
-      - red
-      - gray
   - name: size
     items:
       - S
