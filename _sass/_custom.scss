@@ -88,12 +88,15 @@ amp-selector::before {
   border-radius: 4px;
   padding: 4px 8px;
   margin: 0;
+  width: 100%;
+  max-width: 400px;
   text-transform: uppercase;
 }
 
 .product__selectors ul {
   list-style: none;
   display: flex;
+  max-width: 400px;
   padding: 0;
   flex-wrap: wrap;
 }
@@ -101,6 +104,8 @@ amp-selector::before {
 .product__selectors ul > li {
   padding: 4px 8px;
   margin: 0;
+  flex-basis: 1em;
+  flex-grow: 1;
   text-transform: uppercase;
   color: var(--colors__highlight);
   border: solid var(--colors__highlight) 1px;
