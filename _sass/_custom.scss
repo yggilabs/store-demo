@@ -34,7 +34,7 @@
   grid-template-areas: var(--product_grid-template-areas)
 }
 
-.product p {
+.product ul,p {
   max-width: 400px;
 }
 
@@ -94,7 +94,6 @@
 .product__selectors ul {
   list-style: none;
   display: flex;
-  max-width: 400px;
   padding: 0;
   flex-wrap: wrap;
 }
