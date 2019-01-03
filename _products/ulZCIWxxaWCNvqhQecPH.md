@@ -36,4 +36,4 @@ attributes:
       - 38
 ---
 
-These are pants. They come in many sizes and colors.
+These are some pants. They come in many sizes and colors.
