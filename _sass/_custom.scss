@@ -29,7 +29,8 @@
 
 amp-selector::before {
   display: block;
-  content: attr(name) ":";
+  content: attr(name);
+  min-width: 60px;
   text-transform: uppercase;
   padding: 4px 8px;
   margin-right: 2px;
