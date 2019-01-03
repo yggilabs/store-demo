@@ -31,6 +31,14 @@ amp-selector::before {
   display: block;
   content: attr(name) ":";
   text-transform: uppercase;
+  padding: 4px 8px;
+  margin-right: 2px;
+  margin-bottom: 16px;
+  border-bottom-left-radius: 4px;
+  text-transform: uppercase;
+  border-top-left-radius: 4px;
+  color: var(--colors__dark);
+  border: solid var(--colors__dark) 1px;
 }
 
 .product {
@@ -96,7 +104,7 @@ amp-selector::before {
 .product__selectors ul {
   list-style: none;
   display: flex;
-  max-width: 400px;
+  width:100%
   padding: 0;
   flex-wrap: wrap;
 }
@@ -106,14 +114,10 @@ amp-selector::before {
   margin: 0;
   flex-basis: 1em;
   flex-grow: 1;
+  max-width: 150px;
   text-transform: uppercase;
   color: var(--colors__highlight);
   border: solid var(--colors__highlight) 1px;
-}
-
-.product__selectors ul > li:first-of-type {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
 }
 
 .product__selectors ul > li:last-of-type {
