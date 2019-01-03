@@ -27,6 +27,10 @@
   }
 }
 
+amp-selector {
+  display:flex;
+}
+
 amp-selector::before {
   display: block;
   content: attr(name);
