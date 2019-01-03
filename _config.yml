@@ -8,7 +8,7 @@ theme_color: "#3b1edb"
 # @see https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 title: Shop Demo
 description: A sample implementation of the shop
-url: {{ site.github.url }} # default: site.github.url
+url: site.github.url # default: site.github.url
 author: Sam Kelley
 # twitter:
 #   username: benbalter
