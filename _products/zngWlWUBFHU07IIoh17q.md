@@ -1,6 +1,6 @@
 ---
 name: t-shirt
-price: 900
+price: 999
 images:
   - https://images-na.ssl-images-amazon.com/images/I/81A9r-kog%2BL._UL1500_.jpg
   - https://images-na.ssl-images-amazon.com/images/I/81TgQ0MNFLL._SX679._SX._UX._SY._UY_.jpg
