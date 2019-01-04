@@ -1,6 +1,6 @@
 ---
 name: pants
-price: 2600
+price: 2400
 images:
   - https://images-na.ssl-images-amazon.com/images/I/81A9r-kog%2BL._UL1500_.jpg
   - https://images-na.ssl-images-amazon.com/images/I/81TgQ0MNFLL._SX679._SX._UX._SY._UY_.jpg
