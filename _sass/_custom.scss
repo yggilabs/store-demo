@@ -34,51 +34,41 @@
   grid-template-areas: var(--product_grid-template-areas)
 }
 
-.product ul,p,input[type=submit] {
-  max-width: 400px;
-}
-
-.product__name {
+.product .product__name {
   grid-area: name; 
 }
 
-.product__description {
+.product .product__description {
   grid-area: description; 
 }
 
-.product__rule {
+.product .product__rule {
   grid-area: rule; 
 }
 
-.product__selectors {
+.product .product__selectors {
   grid-area: selectors;
 }
 
-.product__image {
+.product .product__carousel {
   grid-area: image;
 }
 
-.product__features {
+.product .product__features {
   grid-area: features; 
 }
 
-.product__carousel-preview > button {
-  max-width: 90px;
-}
-
-.cover {
-  object-fit: cover;
-}
-
-.contain {
-  object-fit: contain;
-}
-
-.product__add-to-cart-button {
+.product .product__add-to-cart {
   grid-area: add-to-cart;
 }
 
-.product__add-to-cart-button input[type=submit] {
+.contain {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.product .product__add-to-cart input[type=submit] {
   color: var(--colors__light);
   background-color: var(--colors__highlight);
   outline: none;
@@ -90,14 +80,14 @@
   text-transform: uppercase;
 }
 
-.product__selectors ul {
+.product .product__selectors ul {
   list-style: none;
   display: flex;
   padding: 0;
   flex-wrap: wrap;
 }
 
-.product__selectors ul > li {
+.product .product__selectors ul > li {
   padding: 4px 8px;
   margin: 0;
   flex-basis: 1em;
@@ -107,17 +97,17 @@
   border: solid var(--colors__highlight) 1px;
 }
 
-.product__selectors ul > li:first-of-type {
+.product .product__selectors ul > li:first-of-type {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
-.product__selectors ul > li:last-of-type {
+.product .product__selectors ul > li:last-of-type {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 
-.product__selectors ul > li[selected] {
+.product .product__selectors ul > li[selected] {
   color: var(--colors__light);
   background-color: var(--colors__highlight);
   outline: none;
