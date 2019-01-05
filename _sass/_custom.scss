@@ -1,6 +1,6 @@
 :root {
   --product_grid-template-columns: 1fr 1fr;
-  --product_grid-template-areas: 
+  --product_grid-template-areas:     
     "image name" 
     "image description" 
     "image properties"
@@ -9,6 +9,7 @@
     "image rule"
     "image features"
     "body body";
+  --contain_margin: initial;
 }
 
 @media (max-width: 1024px) {
@@ -24,6 +25,7 @@
       "rule"
       "features"
       "body";
+    --contain_margin: 0 auto;
   }
 }
 
@@ -65,7 +67,7 @@
 .contain {
   width: 100%;
   max-width: 400px;
-  margin: 0 auto;
+  margin: var(--contain_margin);
 }
 
 .product .product__add-to-cart input[type=submit] {
