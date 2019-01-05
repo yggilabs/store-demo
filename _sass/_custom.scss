@@ -114,3 +114,7 @@
   background-color: var(--colors__highlight);
   outline: none;
 }
+
+.markdown-body amp-lightbox-gallery * {
+  box-sizing: initial;
+}
