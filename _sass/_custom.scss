@@ -82,6 +82,10 @@
   text-transform: uppercase;
 }
 
+.product .product__add-to-cart input[type=submit]:not([disabled=false]) {
+  background-color: gray;
+  border-color: gray;
+}
 .product .product__selectors ul {
   list-style: none;
   display: flex;
