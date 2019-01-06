@@ -1,11 +1,12 @@
-- name: color
-  items:
-    - red
-    - black
-    - gray
-- name: size
-  items:
-    - s
-    - m
-    - l
-    - xl
+attributes:
+  - name: color
+    items:
+      - red
+      - black
+      - gray
+  - name: size
+    items:
+      - s
+      - m
+      - l
+      - xl
