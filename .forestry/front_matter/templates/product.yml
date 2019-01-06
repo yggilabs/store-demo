@@ -1,7 +1,4 @@
 ---
----
-
----
 label: product
 hide_body: false
 is_partial: false
@@ -44,3 +41,5 @@ fields:
     label: ''
   hidden: false
   default: ''
+pages:
+- _products/product-1.md
