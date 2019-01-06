@@ -1,7 +1,5 @@
 ---
 ---
-
----
 new_page_extension: md
 auto_deploy: false
 admin_path: 
@@ -13,6 +11,11 @@ sections:
 - type: directory
   path: _views
   label: Views
+  create: all
+  match: "**/*"
+- type: directory
+  path: _data
+  label: Data
   create: all
   match: "**/*"
 - type: directory
