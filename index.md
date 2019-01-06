@@ -1,7 +1,8 @@
 ---
-layout: content
 title: Home
+layout: content
 ---
+
 ## About
 
 

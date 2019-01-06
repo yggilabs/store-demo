@@ -1,57 +1,44 @@
-# manifest file stuff
-short_name: Shop Demo
-name: Shop Demo
-
-theme_color: "#3b1edb"
-
-# seo stuff
-# @see https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+---
 title: Shop Demo
-description: A sample implementation of the shop
-url: # default: site.github.url
-author: Sam Kelley
-# twitter:
-#   username: benbalter
-#   card: summary
-# facebook:
-#   app_id: 1234
-#   publisher: 1234
-#   admins: 1234
-logo: /assets/images/icon.svg
-# social:
-#   name: Ben Balter
-#   links:
-#     - https://twitter.com/BenBalter
-#     - https://www.facebook.com/ben.balter
-#     - https://www.linkedin.com/in/BenBalter
-#     - https://plus.google.com/+BenBalter
-#     - https://github.com/benbalter
-#     - https://keybase.io/benbalter
-# google_site_verification:
-lang: en_US # default: en_US
-
-permalink: pretty
-analytics: false # url parameters are acting wierd
+timezone: UTC
 collections:
+  posts:
+    title: Posts
+    output: true
   products:
+    title: Products
+    output: true
+  uploads:
+    title: Uploads
     output: true
   views:
+    title: Views
     output: true
 defaults:
-  -
-    scope:
-      type: products
-    values:
-      layout: product
-  -
-    scope: 
-      type: views
-    values:
-      layout: shop
-      title: Shop
+- scope:
+    path: ''
+    type: products
+  values:
+    layout: product
+- scope:
+    path: ''
+    type: views
+  values:
+    layout: shop
+    title: Shop
+short_name: Shop Demo
+name: Shop Demo
+theme_color: "#3b1edb"
+description: A sample implementation of the shop
+url: 
+author: Sam Kelley
+logo: "/assets/images/icon.svg"
+lang: en_US
+permalink: pretty
+analytics: false
 plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
+- jekyll-seo-tag
+- jekyll-sitemap
 sass:
   sass_dir: _sass
   style: compressed
