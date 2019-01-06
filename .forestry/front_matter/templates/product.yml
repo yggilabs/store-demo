@@ -1,0 +1,30 @@
+---
+label: product
+hide_body: false
+is_partial: true
+display_field: attributes
+fields:
+- type: field_group_list
+  name: attributes
+  label: attributes
+  config:
+    max: '5'
+  fields:
+  - type: select
+    name: color
+    config:
+      source:
+        type: documents
+        section: data
+        file: _data/attributes.yml
+        path: color
+    label: color
+  - type: select
+    name: size
+    config:
+      source:
+        type: documents
+        section: data
+        file: _data/attributes.yml
+        path: size
+    label: size
