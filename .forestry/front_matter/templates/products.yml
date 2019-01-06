@@ -1,0 +1,9 @@
+---
+label: products
+hide_body: false
+is_partial: false
+fields:
+- type: include
+  template: product
+  label: attribute 1
+  name: attribute_1
