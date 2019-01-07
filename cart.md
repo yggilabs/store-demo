@@ -1,8 +1,6 @@
 ---
 title: Cart
-layout: content
+layout: cart
 ---
 
 ## Cart
-
-{% include cart/items.html %}
