@@ -1,3 +1,10 @@
+---
+layout: content
+client_id: 09f822f418c5b2c27fbd
+redirect_uri: https://us-central1-cart-991a0.cloudfunctions.net/api/github/yggilabs/store-demo/authorize
+---
+<meta name="amp-link-variable-allowed-origin" content="https://us-central1-cart-991a0.cloudfunctions.net">
+
 # store-demo
 
 ## Installation
@@ -5,6 +12,16 @@
 1. Go to [Settings](../../settings) > GitHub Pages > Source. Change dropdown value to "master branch" and click "save". Installation Done!
 
 ## Configuration
+
+1. Setup Accounts
+  If you dont already have these accounts, you may want to set them up now. They will be needed later on.
+  1. [GitHub](https://github.com/join)
+  2. [Stripe](https://dashboard.stripe.com/register)
+2. Authorize accounts
+  Give access to the shopping cart app so it can use your accounts
+  1. <a href="https://github.com/login/oauth/authorize?client_id={{ page.client_id }}&state=CLIENT_ID(cart)&redirect_uri={{ page.redirect_uri}}" data-amp-replace="CLIENT_ID">GitHub</a>
+  2. <a href="https://connect.stripe.com/oauth/authorize?response_type=code&client_id={{ page.client_id }}&state=CLIENT_ID(cart)&scope=read_write" data-amp-replace="CLIENT_ID">Stripe</a>
+ 
 
 ## FAQS
 
