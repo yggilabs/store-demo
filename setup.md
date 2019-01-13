@@ -11,7 +11,7 @@ redirect_uri: https://us-central1-cart-991a0.cloudfunctions.net/api/github/yggil
 ## Installation
 1. Create a fork --- Navigate to the [base project](https://github.com/yggilabs/store-demo). Click the "Fork" button.
 2. Enable hosting --- Go to [Settings](../../settings) > GitHub Pages > Source. Change dropdown value to "master branch" and click "save". Installation Done!
-3. Change Site Name --- Make this something memorable. Even if you use a custom domain later on. This is the <your-name-here>.github.io
+3. Change Site Name --- Make this something memorable. Even if you use a custom domain later on. This is the &lt;your-name-here&gt;.github.io
 
 ## Basic Configuration
 
