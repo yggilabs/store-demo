@@ -1,8 +1,9 @@
 ---
 layout: content
-client_id: 09f822f418c5b2c27fbd
+client_id: '09f822f418c5b2c27fbd'
 redirect_uri: https://us-central1-cart-991a0.cloudfunctions.net/api/github/yggilabs/store-demo/authorize
 ---
+
 <meta name="amp-link-variable-allowed-origin" content="https://us-central1-cart-991a0.cloudfunctions.net">
 
 # store-demo
