@@ -9,10 +9,11 @@ redirect_uri: https://us-central1-cart-991a0.cloudfunctions.net/api/github/yggil
 # store-demo
 
 ## Installation
+1. Create a fork --- Navigate to the [base project](https://github.com/yggilabs/store-demo). Click the "Fork" button.
+2. Enable hosting --- Go to [Settings](../../settings) > GitHub Pages > Source. Change dropdown value to "master branch" and click "save". Installation Done!
+3. Change Site Name --- Make this something memorable. Even if you use a custom domain later on. This is the <your-name-here>.github.io
 
-1. Go to [Settings](../../settings) > GitHub Pages > Source. Change dropdown value to "master branch" and click "save". Installation Done!
-
-## Configuration
+## Basic Configuration
 
 1. Setup Accounts
   If you dont already have these accounts, you may want to set them up now. They will be needed later on.
@@ -22,7 +23,10 @@ redirect_uri: https://us-central1-cart-991a0.cloudfunctions.net/api/github/yggil
   Give access to the shopping cart app so it can use your accounts
     1. <a href="https://github.com/login/oauth/authorize?client_id={{ page.client_id }}&state=CLIENT_ID(cart)&redirect_uri={{ page.redirect_uri}}" data-amp-replace="CLIENT_ID">GitHub</a>
     2. <a href="https://connect.stripe.com/oauth/authorize?response_type=code&client_id={{ page.client_id }}&state=CLIENT_ID(cart)&scope=read_write" data-amp-replace="CLIENT_ID">Stripe</a>
- 
+    
+## Adding products
+
+## Advanced coniguration 
 
 ## FAQS
 
