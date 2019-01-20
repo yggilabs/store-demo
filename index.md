@@ -4,4 +4,4 @@ layout: content
 ---
 
 ## About
-{{ site.views.first.url }}
+[store]({{ site.github.url }}{{ site.views.first.url }})
