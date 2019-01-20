@@ -1,8 +1,8 @@
 :root {
   --product_grid-template-columns: 1fr 1fr;
-  --product_grid-template-areas:     
-    "image name" 
-    "image description" 
+  --product_grid-template-areas:
+    "back name"
+    "image description"
     "image properties"
     "image selectors"
     "image add-to-cart"
@@ -15,8 +15,9 @@
 @media (max-width: 1024px) {
   :root {
     --product_grid-template-columns: 1fr;
-    --product_grid-template-areas: 
-      "name" 
+    --product_grid-template-areas:
+      "back"
+      "name"
       "image"
       "description"
       "properties"
@@ -37,15 +38,19 @@
 }
 
 .product .product__name {
-  grid-area: name; 
+  grid-area: name;
+}
+
+.product .product__back {
+  grid-area: back;
 }
 
 .product .product__description {
-  grid-area: description; 
+  grid-area: description;
 }
 
 .product .product__rule {
-  grid-area: rule; 
+  grid-area: rule;
 }
 
 .product .product__selectors {
@@ -57,7 +62,7 @@
 }
 
 .product .product__features {
-  grid-area: features; 
+  grid-area: features;
 }
 
 .product .product__add-to-cart {
