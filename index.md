@@ -4,4 +4,4 @@ layout: content
 ---
 
 ## About
-{{ site.views.first.url }}
+{{ site.views | first | url }}
