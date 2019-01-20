@@ -1,0 +1,13 @@
+active: true
+attributes:
+  color: "gray"
+  size: "L"
+currency: "usd"
+image: null
+inventory:
+  quantity: null
+  type: "bucket"
+  value: "in_stock"
+metadata: {}
+package_dimensions: null
+price: 999
