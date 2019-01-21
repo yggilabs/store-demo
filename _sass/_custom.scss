@@ -8,7 +8,8 @@
     "image add-to-cart"
     "image rule"
     "image features"
-    "body body";
+    "body body"
+    "comments" "comments";
   --contain_margin: initial;
 }
 
@@ -25,7 +26,8 @@
       "add-to-cart"
       "rule"
       "features"
-      "body";
+      "body"
+      "comments";
     --contain_margin: 0 auto;
   }
 }
@@ -35,6 +37,10 @@
   grid-template-columns: var(--product_grid-template-columns);
   grid-auto-rows: auto;
   grid-template-areas: var(--product_grid-template-areas)
+}
+
+.product .product__comments {
+  grid-area: comments;
 }
 
 .product .product__name {
